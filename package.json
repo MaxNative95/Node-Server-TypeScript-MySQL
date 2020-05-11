@@ -1,0 +1,22 @@
+{
+  "name": "node-typescript-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "html": "copyfiles --up 1 src/public/*.html ./dist",
+    "build": "tsc && npm run html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/mysql": "^2.15.10",
+    "copyfiles": "^2.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "mysql": "github:mysqljs/mysql"
+  }
+}
